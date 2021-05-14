@@ -6,8 +6,14 @@ constructor (props) {
     super (props);
     this.state = {
         inicialImage: props.inicialImage,
-        changeImage: props.changeImage,
-        value: ''  //para el form
+        //changeImage: props.changeImage,
+        value: '' , //para el form
+
+        changeImageVisor: props.changeImageVisor,
+        changeImagePanel: props.changeImagePanel,
+        changeImageLogo: props.changeImageLogo,
+        changeImageThread: props.changeImageThread,
+        changeImageSticker: props.changeImageSticker,
     };
 
     this.handleChange = this.handleChange.bind(this); //para el form
@@ -26,103 +32,103 @@ handleChange(event) { //para el form
   //VISOR
 
 VisorColorBlack () {
-    this.setState ( {changeImage: this.props.VisorColorBlack})
+    this.setState ( {changeImageVisor: this.props.VisorColorBlack})
 }
 VisorColorBlue () {
-    this.setState ( {changeImage: this.props.VisorColorBlue})
+    this.setState ( {changeImageVisor: this.props.VisorColorBlue})
 }
 VisorColorGrey () {
-    this.setState ( {changeImage: this.props.VisorColorGrey})
+    this.setState ( {changeImageVisor: this.props.VisorColorGrey})
 }
 VisorColorMagenta () {
-    this.setState ( {changeImage: this.props.VisorColorMagenta})
+    this.setState ( {changeImageVisor: this.props.VisorColorMagenta})
 }
 VisorColorPink () {
-    this.setState ( {changeImage: this.props.VisorColorPink})
+    this.setState ( {changeImageVisor: this.props.VisorColorPink})
 }
 VisorColorYellow () {
-    this.setState ( {changeImage: this.props.VisorColorYellow})
+    this.setState ( {changeImageVisor: this.props.VisorColorYellow})
 }
 
 //PANEL
 
 PanelColorBlack () {
-    this.setState ( {changeImage: this.props.PanelColorBlack})
+    this.setState ( {changeImagePanel: this.props.PanelColorBlack})
 }
 PanelColorBlue () {
-    this.setState ( {changeImage: this.props.PanelColorBlue})
+    this.setState ( {changeImagePanel: this.props.PanelColorBlue})
 }
 PanelColorGrey () {
-    this.setState ( {changeImage: this.props.PanelColorGrey})
+    this.setState ( {changeImagePanel: this.props.PanelColorGrey})
 }
 PanelColorMagenta () {
-    this.setState ( {changeImage: this.props.PanelColorMagenta})
+    this.setState ( {changeImagePanel: this.props.PanelColorMagenta})
 }
 PanelColorPink () {
-    this.setState ( {changeImage: this.props.PanelColorPink})
+    this.setState ( {changeImagePanel: this.props.PanelColorPink})
 }
 PanelColorYellow () {
-    this.setState ( {changeImage: this.props.PanelColorYellow})
+    this.setState ( {changeImagePanel: this.props.PanelColorYellow})
 }
 
 //LOGO
 
 LogoCentralBig () {
-    this.setState ( {changeImage: this.props.LogoCentralBig})
+    this.setState ( {changeImageLogo: this.props.LogoCentralBig})
 }
 LogoCentralSmall () {
-    this.setState ( {changeImage: this.props.LogoCentralSmall})
+    this.setState ( {changeImageLogo: this.props.LogoCentralSmall})
 }
 LogoClean () {
-    this.setState ( {changeImage: this.props.LogoClean})
+    this.setState ( {changeImageLogo: this.props.LogoClean})
 }
 LogoPanelSide () {
-    this.setState ( {changeImage: this.props.LogoPanelSide})
+    this.setState ( {changeImageLogo: this.props.LogoPanelSide})
 }
 LogoVisor () {
-    this.setState ( {changeImage: this.props.LogoVisor})
+    this.setState ( {changeImageLogo: this.props.LogoVisor})
 }
 
 //THREAD
 
 ThreadColorBlack () {
-    this.setState ( {changeImage: this.props.ThreadColorBlack})
+    this.setState ( {changeImageThread: this.props.ThreadColorBlack})
 }
 ThreadColorBlue () {
-    this.setState ( {changeImage: this.props.ThreadColorBlue})
+    this.setState ( {changeImageThread: this.props.ThreadColorBlue})
 }
 ThreadColorGrey () {
-    this.setState ( {changeImage: this.props.ThreadColorGrey})
+    this.setState ( {changeImageThread: this.props.ThreadColorGrey})
 }
 ThreadColorMagenta () {
-    this.setState ( {changeImage: this.props.ThreadColorMagenta})
+    this.setState ( {changeImageThread: this.props.ThreadColorMagenta})
 }
 ThreadColorPink () {
-    this.setState ( {changeImage: this.props.ThreadColorPink})
+    this.setState ( {changeImageThread: this.props.ThreadColorPink})
 }
 ThreadColorYellow () {
-    this.setState ( {changeImage: this.props.ThreadColorYellow})
+    this.setState ( {changeImageThread: this.props.ThreadColorYellow})
 }
 
 //STICKER
 
 StickerColorBlack () {
-    this.setState ( {changeImage: this.props.StickerColorBlack})
+    this.setState ( {changeImageSticker: this.props.StickerColorBlack})
 }
 StickerColorBlue () {
-    this.setState ( {changeImage: this.props.StickerColorBlue})
+    this.setState ( {changeImageSticker: this.props.StickerColorBlue})
 }
 StickerColorGrey () {
-    this.setState ( {changeImage: this.props.StickerColorGrey})
+    this.setState ( {changeImageSticker: this.props.StickerColorGrey})
 }
 StickerColorMagenta () {
-    this.setState ( {changeImage: this.props.StickerColorMagenta})
+    this.setState ( {changeImageSticker: this.props.StickerColorMagenta})
 }
 StickerColorPink () {
-    this.setState ( {changeImage: this.props.StickerColorPink})
+    this.setState ( {changeImageSticker: this.props.StickerColorPink})
 }
 StickerColorYellow () {
-    this.setState ( {changeImage: this.props.StickerColorYellow})
+    this.setState ( {changeImageSticker: this.props.StickerColorYellow})
 }
 
 resetImagen () {
@@ -136,52 +142,118 @@ return (
           
           <div className= "frameLeft">
             <img className = "positionFixed" src ={this.state.inicialImage}></img>
-            <img className = "positionFixed" src ={this.state.changeImage}></img>
+            <img className = "positionFixed" src ={this.state.changeImageVisor}></img>
+            <img className = "positionFixed" src ={this.state.changeImagePanel}></img>
+            <img className = "positionFixed" src ={this.state.changeImageLogo}></img>
+            <img className = "positionFixed" src ={this.state.changeImageThread}></img>
+            <img className = "positionFixed" src ={this.state.changeImageSticker}></img>
           </div>
 
           <div className= "frameRight">
             <form onSubmit={this.handleSubmit}>
-                <label>Elige un color para la Visera</label>
-                <input type="radio" id = "black" name= "visor" value={this.state.value} onChange= { () => this.VisorColorBlack() }/>
-                <input type="radio" id = "blue" name= "visor" value={this.state.value} onChange= { () => this.VisorColorBlue() }/>
-                <input type="radio" id = "grey" name= "visor" value={this.state.value} onChange= { () => this.VisorColorGrey() }/>
-                <input type="radio" id = "magenta" name= "visor" value={this.state.value} onChange= { () => this.VisorColorMagenta() }/>
-                <input type="radio" id = "pink" name= "visor" value={this.state.value} onChange= { () => this.VisorColorPink() }/>
-                <input type="radio" id = "yellow" name= "visor" value={this.state.value} onChange= { () => this.VisorColorYellow() }/>
-
-                <label>Elige un color para los Paneles</label>
-                <input type="radio" id = "black" name= "panel" value={this.state.value} onChange= { () => this.PanelColorBlack() }/>
-                <input type="radio" id = "blue" name= "panel" value={this.state.value} onChange= { () => this.PanelColorBlue() }/>
-                <input type="radio" id = "grey" name= "panel" value={this.state.value} onChange= { () => this.PanelColorGrey() }/>
-                <input type="radio" id = "magenta" name= "panel" value={this.state.value} onChange= { () => this.PanelColorMagenta() }/>
-                <input type="radio" id = "pink" name= "panel" value={this.state.value} onChange= { () => this.PanelColorPink() }/>
-                <input type="radio" id = "yellow" name= "panel" value={this.state.value} onChange= { () => this.PanelColorYellow() }/>
-
-                <label>Elige el tamaño y posición del Logo</label>
-                <input type="radio" id = "logoSelect" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralBig() }/>
-                <input type="radio" id = "logoSelect" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralSmall() }/>
-                <input type="radio" id = "logoSelect" name= "logo" value={this.state.value} onChange= { () => this.LogoClean() }/>
-                <input type="radio" id = "logoSelect" name= "logo" value={this.state.value} onChange= { () => this.LogoPanelSide() }/>
-                <input type="radio" id = "logoSelect" name= "logo" value={this.state.value} onChange= { () => this.LogoVisor() }/>
-
-                <label>Elige un color para las Costuras</label>
-                <input type="radio" id = "black" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorBlack() }/>
-                <input type="radio" id = "blue" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorBlue() }/>
-                <input type="radio" id = "grey" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorGrey() }/>
-                <input type="radio" id = "magenta" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorMagenta() }/>
-                <input type="radio" id = "pink" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorPink() }/>
-                <input type="radio" id = "yellow" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorYellow() }/>
-
-                <label>Elige un color para el Sticker</label>
-                <input type="radio" id = "black" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorBlack() }/>
-                <input type="radio" id = "blue" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorBlue() }/>
-                <input type="radio" id = "grey" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorGrey() }/>
-                <input type="radio" id = "magenta" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorMagenta() }/>
-                <input type="radio" id = "pink" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorPink() }/>
-                <input type="radio" id = "yellow" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorYellow() }/>
                 
-                
-                <input type="submit" value="Submit" />
+                    <label>Elige un color para la Visera</label><br/>
+                    <div className= "container">
+                        <div className="checkmarkBlack">
+                            <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorBlack() }/>
+                        </div>
+                            <div className="checkmarkBlue">
+                                <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorBlue() }/>
+                            </div>
+                                <div className="checkmarkGrey">
+                                    <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorGrey() }/>
+                                </div>
+                                    <div className="checkmarkMagenta">
+                                        <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorMagenta() }/>
+                                    </div>
+                                <div className="checkmarkPink">
+                                    <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorPink() }/>
+                                </div>
+                            <div className="checkmarkYellow">
+                                <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorYellow() }/>
+                            </div>
+                        <br/>
+                    <label>Elige un color para los Paneles</label><br/>
+                        <div className="checkmarkBlack">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorBlack() }/>
+                        </div>
+                        <div className="checkmarkBlue">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorBlue() }/>
+                        </div>
+                        <div className="checkmarkGrey">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorGrey() }/>
+                        </div>
+                        <div className="checkmarkMagenta">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorMagenta() }/>
+                        </div>
+                        <div className="checkmarkPink">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorPink() }/>
+                        </div>
+                        <div className="checkmarkYellow">
+                            <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorYellow() }/>
+                        </div>
+                    <br/>
+                    <label>Elige el tamaño y posición del Logo</label><br/>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralBig() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralSmall() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoClean() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoPanelSide() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                        <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoVisor() }/>
+                        </div>
+                    <br/>
+                    <label>Elige un color para las Costuras</label><br/>
+                        <div className="checkmarkBlack">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorBlack() }/>
+                        </div>
+                        <div className="checkmarkBlue">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorBlue() }/>
+                        </div>
+                        <div className="checkmarkGrey">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorGrey() }/>
+                        </div>
+                        <div className="checkmarkMagenta">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorMagenta() }/>
+                        </div>
+                        <div className="checkmarkPink">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorPink() }/>
+                        </div>
+                        <div className="checkmarkYellow">
+                            <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorYellow() }/>
+                        </div>
+                    <br/>
+                    <label>Elige un color para el Sticker</label><br/>
+                        <div className="checkmarkBlack">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorBlack() }/>
+                        </div>
+                        <div className="checkmarkBlue">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorBlue() }/>
+                        </div>
+                        <div className="checkmarkGrey">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorGrey() }/>
+                        </div>
+                        <div className="checkmarkMagenta">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorMagenta() }/>
+                        </div>
+                        <div className="checkmarkPink">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorPink() }/>
+                        </div>
+                        <div className="checkmarkYellow">
+                            <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorYellow() }/>
+                        </div>
+                    <br/>
+                    
+                    
+                    <input type="submit" value="Submit" />
+                </div>
             </form>
         </div>
 

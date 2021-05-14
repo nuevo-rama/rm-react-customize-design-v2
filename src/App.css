@@ -7,12 +7,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .frameLeft {
   display: block;
-  background-color: grey;
-  width: 70%;
+  background-color: rgb(204, 204, 204);
+  width: 60%;
   
 }
 
@@ -20,8 +21,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: grey;
-  width: 25%;
+  background-color: rgb(194, 194, 194);
+  width: 35%;
   
 }
 
@@ -30,40 +31,56 @@ img.positionFixed {
   border: 1px red solid;
   position: absolute;
   
-  left: 5vw;
-  top: 5vh;
+  left: 7.5vw;
+  
   max-width: 45vw;
   max-height: auto;
 }
 
-button {
-  border: none;
-  
+/*---------------------------*/
+
+.checkmarkBlack input, .checkmarkBlue input, .checkmarkGrey input, .checkmarkMagenta input, .checkmarkPink input, .checkmarkYellow input, .checkmarkLogo input {
+  opacity: 0;
+  width: 5vw;
+  height: 5vw;
 }
 
-#black {
+.checkmarkBlack, .checkmarkBlue, .checkmarkGrey, .checkmarkMagenta, .checkmarkPink, .checkmarkYellow, .checkmarkLogo {
+  text-align: center;
+  width: 5vw;
+  height: 5vw;
+  display: inline-block;
+  margin: 0.3vw;
+  border-radius: 10px;
+}
+
+
+
+.checkmarkBlack {
   background-color: black;
 }
 
-#blue {
+.checkmarkBlue {
   background-color: blue;
 }
 
-#grey {
-  background-color: grey;
+.checkmarkGrey {
+  background-color: Grey;
 }
 
-#magenta {
-  background-color: magenta;
+.checkmarkMagenta {
+  background-color: Magenta;
 }
 
-#pink {
-  background-color: pink;
+.checkmarkPink {
+  background-color: Pink;
 }
 
-#yellow {
-  background-color: yellow;
+.checkmarkYellow {
+  background-color: Yellow;
 }
+/*-------------------------*/
+
 
 #reset {
   background-color: white;
