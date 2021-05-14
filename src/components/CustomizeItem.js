@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 
-class CustomizeVisor extends Component {  //EL COMPONENTE RECIBE PROPS
+
+class CustomizeItem extends Component {  //EL COMPONENTE RECIBE PROPS
 
 constructor (props) {
     super (props);
     this.state = {
         inicialImage: props.inicialImage,
-        //changeImage: props.changeImage,
+        resetImage: props.resetImage,
         value: '' , //para el form
 
         changeImageVisor: props.changeImageVisor,
@@ -131,8 +132,10 @@ StickerColorYellow () {
     this.setState ( {changeImageSticker: this.props.StickerColorYellow})
 }
 
-resetImagen () {
-    this.setState ( {inicialImage: this.props.inicialImage})
+//RESET
+
+resetImage () {
+    this.setState ( {resetImage: this.props.resetImage})
 }
 
 render() {                         //ENVUELVO TODO EN RENDER
@@ -150,10 +153,38 @@ return (
           </div>
 
           <div className= "frameRight">
+              <div className = "productDetails">
+                <h4 className = "productDetailTitle">Título</h4>
+                <h4 className = "productDetailPrice">Precio</h4>
+                <h4 className = "productDetailSubtitle">Subtítulo</h4>
+              </div>
             <form onSubmit={this.handleSubmit}>
-                
-                    <label>Elige un color para la Visera</label><br/>
-                    <div className= "container">
+                <div className= "container">
+
+                <div className = "labelContainer">
+                        <label>Elige el tamaño y posición del Logo</label>
+                    </div>
+                    <div className="checkmarkLogo">
+                        
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralBig() }/>
+                            </div>
+                        
+                            <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralSmall() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoClean() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoPanelSide() }/>
+                        </div>
+                        <div className="checkmarkLogo">
+                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoVisor() }/>
+                        </div>
+                    <br/>
+                    <div className = "labelContainer">
+                        <label>Elige un color para la Visera</label>
+                    </div>
                         <div className="checkmarkBlack">
                             <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorBlack() }/>
                         </div>
@@ -173,7 +204,9 @@ return (
                                 <input type="radio" name= "visor" value={this.state.value} onChange= { () => this.VisorColorYellow() }/>
                             </div>
                         <br/>
-                    <label>Elige un color para los Paneles</label><br/>
+                    <div className = "labelContainer">
+                        <label>Elige un color para los Paneles</label>
+                    </div>
                         <div className="checkmarkBlack">
                             <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorBlack() }/>
                         </div>
@@ -193,24 +226,10 @@ return (
                             <input type="radio" name= "panel" value={this.state.value} onChange= { () => this.PanelColorYellow() }/>
                         </div>
                     <br/>
-                    <label>Elige el tamaño y posición del Logo</label><br/>
-                        <div className="checkmarkLogo">
-                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralBig() }/>
-                        </div>
-                        <div className="checkmarkLogo">
-                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralSmall() }/>
-                        </div>
-                        <div className="checkmarkLogo">
-                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoClean() }/>
-                        </div>
-                        <div className="checkmarkLogo">
-                            <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoPanelSide() }/>
-                        </div>
-                        <div className="checkmarkLogo">
-                        <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoVisor() }/>
-                        </div>
-                    <br/>
-                    <label>Elige un color para las Costuras</label><br/>
+                    
+                    <div className = "labelContainer">
+                    <label>Elige un color para las Costuras</label>
+                    </div>
                         <div className="checkmarkBlack">
                             <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorBlack() }/>
                         </div>
@@ -230,7 +249,9 @@ return (
                             <input type="radio" name= "thread" value={this.state.value} onChange= { () => this.ThreadColorYellow() }/>
                         </div>
                     <br/>
-                    <label>Elige un color para el Sticker</label><br/>
+                    <div className = "labelContainer">
+                        <label>Elige un color para el Sticker</label>
+                    </div>
                         <div className="checkmarkBlack">
                             <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorBlack() }/>
                         </div>
@@ -250,6 +271,8 @@ return (
                             <input type="radio" name= "sticker" value={this.state.value} onChange= { () => this.StickerColorYellow() }/>
                         </div>
                     <br/>
+
+                    <button value={this.state.value} onClick= { () => this.resetImage() }>Reset</button>
                     
                     
                     <input type="submit" value="Submit" />
@@ -263,4 +286,4 @@ return (
 
 }}
     
-export default CustomizeVisor;
+export default CustomizeItem;

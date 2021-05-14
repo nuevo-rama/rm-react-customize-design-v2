@@ -8,12 +8,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100vh;
+  background-image: linear-gradient(to top, rgb(131, 131, 131), rgb(255, 255, 255));
 }
 
 .frameLeft {
   display: block;
-  background-color: rgb(204, 204, 204);
   width: 60%;
+  
   
 }
 
@@ -21,14 +22,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 35%;
+  margin: 2vw;
+  
   
 }
 
 img.positionFixed {
   
-  border: 1px red solid;
+  
   position: absolute;
   
   left: 7.5vw;
@@ -37,12 +41,40 @@ img.positionFixed {
   max-height: auto;
 }
 
+.productDetails {
+  width: 95%;
+  height: 7vw;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+}
+
+.productDetails h4 {
+  font-size: 14px;
+}
+
+.labelContainer {
+  
+  width: 95%;
+  height: 2vw;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: auto;
+  
+}
+
 /*---------------------------*/
 
 .checkmarkBlack input, .checkmarkBlue input, .checkmarkGrey input, .checkmarkMagenta input, .checkmarkPink input, .checkmarkYellow input, .checkmarkLogo input {
   opacity: 0;
   width: 5vw;
   height: 5vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .checkmarkBlack, .checkmarkBlue, .checkmarkGrey, .checkmarkMagenta, .checkmarkPink, .checkmarkYellow, .checkmarkLogo {
@@ -50,14 +82,22 @@ img.positionFixed {
   width: 5vw;
   height: 5vw;
   display: inline-block;
-  margin: 0.3vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
   border-radius: 10px;
 }
 
-
+.checkmarkLogo {
+  border: 1px red solid;
+  
+  
+  
+}
 
 .checkmarkBlack {
-  background-color: black;
+  background-color: rgb(2, 2, 2);
 }
 
 .checkmarkBlue {
