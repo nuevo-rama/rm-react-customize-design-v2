@@ -3,14 +3,68 @@
 }
 
 .frame {
-  background-color: grey;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.mainImage {
-  border: 1px red solid;
+.frameLeft {
+  display: block;
+  background-color: grey;
+  width: 70%;
+  
+}
+
+.frameRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: grey;
+  width: 25%;
+  
 }
 
 img.positionFixed {
+  
   border: 1px red solid;
   position: absolute;
+  
+  left: 5vw;
+  top: 5vh;
+  max-width: 45vw;
+  max-height: auto;
+}
+
+button {
+  border: none;
+  
+}
+
+#black {
+  background-color: black;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#grey {
+  background-color: grey;
+}
+
+#magenta {
+  background-color: magenta;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#reset {
+  background-color: white;
 }

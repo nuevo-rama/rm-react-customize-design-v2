@@ -47,7 +47,7 @@ function App() {
       inicialImage= {'/productImagesCustomize/cap-image-inicial.png'}
       LogoCentralBig= {'/productImagesCustomize/cap-image-logo-central-big.png'}
       LogoCentralSmall= {'/productImagesCustomize/cap-image-logo-central-small.png'}
-      LogoClean= {'/productImagesCustomize/cap-image-thread-logo-clean.png'}
+      LogoClean= {'/productImagesCustomize/cap-image-logo-clean.png'}
       LogoPanelSide= {'/productImagesCustomize/cap-image-logo-panel-side.png'}
       />
 

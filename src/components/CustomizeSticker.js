@@ -40,12 +40,14 @@ resetImagen () {
 
 render() {                         //ENVUELVO TODO EN RENDER
 return (
-      <div className= "frame" >
-          <section className= "mainImage">
+    <div className= "frame">
+      <div className= "frameLeft" >
+          
             <img className = "positionFixed" src ={this.state.inicialImage}></img>
             <img className = "positionFixed" src ={this.state.changeImage}></img>
-          </section>
-          
+        
+        </div>
+         <div className= "frameRight" > 
           <button onClick= { () => this.StickerColorBlack() }>Negro</button>
           <button onClick= { () => this.StickerColorBlue() }>Azul</button>
 
@@ -56,6 +58,7 @@ return (
           <button onClick= { () => this.StickerColorYellow() }>Amarillo</button>
           
           <button onClick= { () => this.resetImagen() }>Reset</button>
+      </div>
       </div>
   )
 

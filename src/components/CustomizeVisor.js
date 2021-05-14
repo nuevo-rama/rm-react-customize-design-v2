@@ -41,21 +41,22 @@ resetImagen () {
 render() {                         //ENVUELVO TODO EN RENDER
 return (
       <div className= "frame" >
-          <section className= "mainImage">
+          <div className= "frameLeft">
             <img className = "positionFixed" src ={this.state.inicialImage}></img>
             <img className = "positionFixed" src ={this.state.changeImage}></img>
-          </section>
-          
-          <button onClick= { () => this.VisorColorBlack() }>Negro</button>
-          <button onClick= { () => this.VisorColorBlue() }>Azul</button>
+          </div>
+          <div className= "frameRight">
+          <button id = "black" onClick= { () => this.VisorColorBlack() }>Negro</button>
+          <button id = "blue" onClick= { () => this.VisorColorBlue() }>Azul</button>
 
-          <button onClick= { () => this.VisorColorGrey() }>Gris</button>
-          <button onClick= { () => this.VisorColorMagenta() }>Magenta</button>
+          <button id = "grey" onClick= { () => this.VisorColorGrey() }>Gris</button>
+          <button id = "magenta" onClick= { () => this.VisorColorMagenta() }>Magenta</button>
 
-          <button onClick= { () => this.VisorColorPink() }>Rosa</button>
-          <button onClick= { () => this.VisorColorYellow() }>Amarillo</button>
+          <button id = "pink" onClick= { () => this.VisorColorPink() }>Rosa</button>
+          <button id = "yellow" onClick= { () => this.VisorColorYellow() }>Amarillo</button>
           
-          <button onClick= { () => this.resetImagen() }>Reset</button>
+          <button id = "reset" onClick= { () => this.resetImagen() }>Reset</button>
+      </div>
       </div>
   )
 

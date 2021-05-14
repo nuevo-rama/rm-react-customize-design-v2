@@ -48,11 +48,11 @@ resetImagen () {
 render() {                         //ENVUELVO TODO EN RENDER
 return (
       <div className= "frame" >
-          <section className= "mainImage">
+          <div className= "frameLeft">
             <img className = "positionFixed" src ={this.state.inicialImage}></img>
             <img className = "positionFixed" src ={this.state.changeImage}></img>
-          </section>
-          
+          </div>
+          <div className= "frameRight">
           <button onClick= { () => this.PanelColorBlack() }>Negro</button>
           <button onClick= { () => this.PanelColorBlue() }>Azul</button>
 
@@ -65,6 +65,7 @@ return (
           
 
           <button onClick= { () => this.resetImagen() }>Reset</button>
+      </div>
       </div>
   )
 
