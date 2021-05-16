@@ -1,4 +1,5 @@
 import React from 'react';
+import slider from './imagen_slider_5.jpg'
 
 import CustomizeItem from './components/CustomizeItem';
 
@@ -8,7 +9,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style= {{backgroundImage: `url(${slider})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+      
       <CustomizeItem
       inicialImage= {'/productImagesCustomize/cap-image-inicial.png'}
       VisorColorBlack= {'/productImagesCustomize/cap-image-visor-color-black.png'}
