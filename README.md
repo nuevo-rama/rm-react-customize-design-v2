@@ -18,9 +18,13 @@ Items que se pueden Customizar:
 
 ---
 
-## Wireframe
+## Wireframe Desktop
 
-![wireframe](/public/wireframe-customize.jpg)
+![wireframe desktop](/public/wireframe-customize.jpg)
+
+## Wireframe Mobile
+
+![wireframe mobile](/public/wireframe-mobile-customize.jpg)
 
 ---
 
