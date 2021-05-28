@@ -147,13 +147,13 @@ return (
           
           
           <div className= "frameLeft">
-            <img className = "positionFixed" src ='/productImagesCustomize/cap-image-fixed-shadow.png'></img>
-            <img className = "positionFixed" src ={this.state.inicialImage}></img>
-            <img className = "positionFixed" src ={this.state.changeImageVisor}></img>
-            <img className = "positionFixed" src ={this.state.changeImagePanel}></img>
-            <img className = "positionFixed" src ={this.state.changeImageLogo}></img>
-            <img className = "positionFixed" src ={this.state.changeImageThread}></img>
-            <img className = "positionFixed" src ={this.state.changeImageSticker}></img>
+            <img className = "positionFixed" src ='/productImagesCustomize/cap-image-fixed-shadow.png' alt=""></img>
+            <img className = "positionFixed" src ={this.state.inicialImage} alt=""></img>
+            <img className = "positionFixed" src ={this.state.changeImageVisor} alt=""></img>
+            <img className = "positionFixed" src ={this.state.changeImagePanel} alt=""></img>
+            <img className = "positionFixed" src ={this.state.changeImageLogo} alt=""></img>
+            <img className = "positionFixed" src ={this.state.changeImageThread} alt=""></img>
+            <img className = "positionFixed" src ={this.state.changeImageSticker} alt=""></img>
           </div>
 
           <div className= "frameRight">
