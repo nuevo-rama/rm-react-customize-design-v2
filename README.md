@@ -1,20 +1,20 @@
 # React App para customizar producto según elecciones del usuario
 
-Ésta aplicación hecha con React permite al usuario poder seleccionar distintas opciones
+- Ésta aplicación hecha con React permite al usuario poder seleccionar distintas opciones
 a gusto en el producto.
-Items que se pueden Customizar:
+- Items que se pueden Customizar:
 
 **Logo**
-5 Opciones a elección
+- 5 Opciones a elección
 
 **Color de los paneles**
-6 Colores a elección
+- 6 Colores a elección
 
 **Color de la Vicera**
-6 Colores a elección
+- 6 Colores a elección
 
 **Sticker**
-6 Opciones a elección
+- 6 Opciones a elección
 
 ---
 
