@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.headerComponent {
+  display: block;
+  width: 100%;
+  height: 10vw;
+  background-color: grey;
+}
+
+.footerComponent {
+  display: block;
+  width: 100%;
+  height: 10vw;
+  background-color: grey;
+}
+
 .frame {
   display:flex;
   flex-direction: row;
