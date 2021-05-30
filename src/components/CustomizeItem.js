@@ -158,9 +158,7 @@ return (
 
           <div className= "frameRight">
               <div className = "productDetails">
-                <h4 className = "productDetailTitle">Título</h4>
-                <h4 className = "productDetailPrice">Precio</h4>
-                <h4 className = "productDetailSubtitle">Subtítulo</h4>
+                
               </div>
             <form onSubmit={this.handleSubmit}>
                 <div className= "container">
@@ -168,19 +166,19 @@ return (
                 <div className = "labelContainer">
                         <label>Elige el tamaño y posición del Logo</label>
                     </div>
-                    <div className="checkmarkLogo"><h4>Centro L</h4>
+                    <div className="checkmarkLogo">
                         <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralBig() }/>
                     </div>
-                    <div className="checkmarkLogo"><h4>Centro M</h4>
+                    <div className="checkmarkLogo">
                         <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoCentralSmall() }/>
                     </div>
-                    <div className="checkmarkLogo"><h4>Sin Logo</h4>
+                    <div className="checkmarkLogo">
                         <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoClean() }/>
                     </div>
-                    <div className="checkmarkLogo"><h4>Lateral</h4>
+                    <div className="checkmarkLogo">
                         <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoPanelSide() }/>
                     </div>
-                    <div className="checkmarkLogo"><h4>Visera</h4>
+                    <div className="checkmarkLogo">
                         <input type="radio" name= "logo" value={this.state.value} onChange= { () => this.LogoVisor() }/>
                     </div>
                     </div>
@@ -279,9 +277,9 @@ return (
                     </div>
                     
                     <div className= "resetSubmitButtons">
-                    <button value={this.state.value} onClick= { () => this.resetImage() }>Reset</button>
+                        <button className="reset" value={this.state.value} onClick= { () => this.resetImage() }>Borrar</button>
                                         
-                    <button><input type="submit" value="Submit" /></button>
+                        <button className="submit" value={this.state.value}>Añadir al carrito</button>
                     </div>
                 </div>
             </form>
